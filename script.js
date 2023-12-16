@@ -22,6 +22,9 @@ function stringChop(str, size) {
   if(str.length<size){
 	  return str;
   }
+  else if (str.length==0 || str==null){
+	  return [];
+  }
   return array;
 }
 
