@@ -19,11 +19,11 @@ function stringChop(str, size) {
     str1+=str[i];
   }
   array.push(str1);
-  if(str.length<size){
-	  return str;
-  }
-  else if (str.length==0 || str==null){
+  if (str.length==0 || str==null){
 	  return [];
+  }
+  else if(str.length<size){
+	  return str;
   }
   return array;
 }
